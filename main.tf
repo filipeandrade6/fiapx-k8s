@@ -49,4 +49,15 @@ module "workers_node_group" {
   iam_role_arn = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/LabRole"
 }
 
+module "resources" {
+  source = "./modules/resources"
+
+  s3_bucket_videos_name = "fiap44-framer-videos"
+  s3_bucket_images_name = "fiap44-framer-images"
+  sqs_status_name       = "framer-status.fifo"
+  sqs_notification_name = "framer-notification"
+
+  iam_role_arn = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/LabRole"
+}
+
 data "aws_caller_identity" "current" {}

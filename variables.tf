@@ -3,5 +3,5 @@ variable "region_name" {
 }
 
 variable "cluster_name" {
-    default = "fiapx44"
+    default = "fiap44"
 }
