@@ -31,7 +31,7 @@ To create EKS cluster:
 
 To install Nginx Ingress and Load Balancer:
 
-- `aws eks update-kubeconfig --name fiapx44-eks-cluster --region us-east-1` to configure kubectl
+- `aws eks update-kubeconfig --name fiap44-eks-cluster --region us-east-1` to configure kubectl
 - `curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash` to install Helm
 - ```bash
   # to install nginx ingress execute:
